@@ -1,0 +1,208 @@
+body {
+    
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family:'Abhaya Libre', serif;
+}
+img {
+    max-width: 100%;
+    height: auto; /* serve a eliminare il margin-bottom che le immagini hanno di default */
+}
+
+main {
+    max-width: 1550px;
+    margin: auto;
+    padding: 0px;
+   
+}
+header a {
+    text-decoration: none;
+    color: #222;
+    
+    
+}
+
+header a:hover {
+    color: rgb(128, 138, 41);
+    
+}
+
+header {
+    text-align:center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid rgb(165, 165, 165);
+}
+
+header p {
+
+    margin: 0;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    font-family: 'Averia Libre', cursive;
+    
+
+}
+
+header nav ul {
+    margin:0;
+    list-style-type: none;
+    display: flex;
+    grid-gap: 93%;
+    font-size: 15px;
+    
+    
+}
+
+main {
+    margin: 80px auto;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 5fr));
+    gap: 100px;
+}
+
+main .titolo{
+    font-size: 20px;
+    position: relative;
+    font-family: 'Prata', serif;
+    text-transform: uppercase;
+}
+
+main .testo{
+    display: flex;
+    line-height: 130%;
+    letter-spacing: 2px;
+    font-size: 15px;
+    gap: 60px;
+    
+    
+}
+
+main .testo p{
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.5;
+    display: block;
+    
+
+}
+
+main .testo img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 400px;
+    margin-right:0px;
+    max-width: fit-content
+    
+       
+}
+
+main .menu {
+    background: #FAF3B5;
+    border-radius: 10px;
+    height: 400px;
+
+}
+
+main .menu img {
+    border-radius: 10px 0 0 0;
+    object-fit: cover;
+        height: 250px;
+}
+
+main div img {
+    border-radius: 10px,0px,0px,10px;
+    max-width: fit-content;
+        display:block;
+      margin:0px auto;
+      
+}
+
+main div.menu h2 {
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Prata', serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+main div.menu p {
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.5; /* l'interlinea del testo */
+    padding: 10px 0px 20px 0px;
+    
+}
+
+main div.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+    
+}
+
+footer {
+    
+    justify-content: space-between;
+    padding: 30px;
+}
+
+footer p {
+    left:0;
+    width:100%;
+    font-family: 'Averia Libre', cursive;
+    font-weight: bold;
+    border-top:1px solid rgb(58, 58, 58);
+    padding: 20px 0;
+    font-size: 14px;
+    letter-spacing: 6px;
+    color:#444
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: #222;
+    
+    
+}
+
+footer a:hover {
+    color: rgb(128, 138, 41);
+    
+}
+
+footer nav ul {
+    
+    margin:0;
+    list-style-type: none;
+    line-height: 2em;
+    
+    
+}
+
+
+
+@media (max-width: 800px) { /* se la finestra ha una larghezza minore di 800px, fai lo sfondo giallo */
+    body { 
+        background: yellow;
+    }
+}
+
+@media (max-width: 400px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+    body {
+        background: chartreuse;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
